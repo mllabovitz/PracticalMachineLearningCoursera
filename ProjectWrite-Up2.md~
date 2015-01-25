@@ -8,18 +8,14 @@ The analysis starts with a preprocessing step which included a summary of each o
 Because of the substantial correlation present and the large number of potential predictors, a dimensionality reduction step for the predictors using Principal Components Analysis (PCA) was undertaken.  The cumulative variation explained for the first 20 components was as follows:
 
 Cumulative Proportion of Variation Explained
-
-          PC_1     PC_2      PC_3       PC_4        PC_5 
-        0.1577   0.3116    0.3999     0.4778      0.5467 
-        
-          PC_6     PC_7      PC_8       PC_9       PC_10 
-        0.6040   0.6464    0.6856     0.7181      0.7466
-        
-         PC_11    PC_12     PC_13      PC_14       PC_15 
-        0.7730   0.7947    0.8144     0.8322      0.8489 
-        
-         PC_16    PC_17     PC_18      PC_19       PC_20 
-        0.8641   0.8779    0.8906     0.9020      0.9120 
+        PC_1     PC_2      PC_3       PC_4        PC_5 
+      0.1577   0.3116    0.3999     0.4778      0.5467 
+        PC_6     PC_7      PC_8       PC_9       PC_10 
+      0.6040   0.6464    0.6856     0.7181      0.7466
+       PC_11    PC_12     PC_13      PC_14       PC_15 
+      0.7730   0.7947    0.8144     0.8322      0.8489 
+       PC_16    PC_17     PC_18      PC_19       PC_20 
+      0.8641   0.8779    0.8906     0.9020      0.9120 
 
 Examination of a scree plot of the components along with the somewhat arbitrary decision to limit variation explained to 80% yielded 13 as the number of components to be used.  The preprocessing  function was applied to the training set of 53 predictors yielding a matrix decomposition.  A processing step to create the PC values was performed.  The identical matrices  created from the  decomposition of the training data and training PC score generation were applied to test data to create a set of PC values for the test data.
 
